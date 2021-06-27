@@ -17,4 +17,27 @@ public class LineComparision {
 		length=Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1), 2));
 		System.out.println("Length : "+length);
 	}
+	public void checkEqualUC2()
+	{
+		System.out.println("UC2 output:");
+		 length1=x2-x1;
+		 length2=y2-y1;
+		 boolean res=num1.equals(num2);
+		 if(res==true)
+		 {
+			 System.out.println("two lines are equal");
+		 }
+		 else
+		 {
+			 System.out.println("Two lines are not equal");
+		 }
+		 if(length1==length2)
+		 {
+			 System.out.println("two lines are equal");
+		 }
+		 else
+		 {
+			 System.out.println("Two lines are not equal");
+		 }
+	}
 }
