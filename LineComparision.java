@@ -1,9 +1,6 @@
 package com.bridgelabz.linecomparisioncompute;
 
 public class LineComparision {
-	public static void main(String[] args) {
-		System.out.println("welcome to line cmparision program");		
-	}
 	static int x1=10;
 	static int x2=40;
 	static int y1=30;
@@ -55,5 +52,45 @@ public class LineComparision {
 		 {
 			 System.out.println("lines are equal");
 		 }
+	}
+	public void checkUC4()
+	{
+		System.out.println("UC4 output : ");
+		 boolean res=num1.equals(num2);
+		 if(res==true)
+		 {
+			 System.out.println("two lines are equal");
+		 }
+		 else
+		 {
+			 System.out.println("Two lines are not equal");
+		 }
+		int res=Integer.compare(length1, length2);
+		 if(res<0)
+		 {
+			System.out.println("line1 is less than line2");
+		 }
+		 else if(res>0)
+		 {
+			 System.out.println("line1 is greater than line2");
+		 }
+		 else
+		 {
+			 System.out.println("lines are equal");
+		 }
+	}
+	public static void main(String[] args)
+	{
+		System.out.println("Welcome to Comparision Computation Program ");
+		//UC1
+		LineComparision l1=new LineComparision();
+		l1.calLengthUC1();
+		//UC2
+		l1.checkEqualUC2();
+		//UC3
+		l1.checkGrtLesUC3();
+		//UC4
+		l1.checkUC4();
+		
 	}
 }
