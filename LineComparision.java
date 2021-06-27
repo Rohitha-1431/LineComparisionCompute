@@ -40,4 +40,20 @@ public class LineComparision {
 			 System.out.println("Two lines are not equal");
 		 }
 	}
+	public void checkGrtLesUC3()
+	{
+		System.out.println("UC3 output:");
+		 if(length1<length2)
+		 {
+			 System.out.println("line1 is less than line2");
+		 }
+		 else if(length1>length2)
+		 {
+			 System.out.println("line1 is greater than line2");
+		 }
+		 else
+		 {
+			 System.out.println("lines are equal");
+		 }
+	}
 }
